@@ -1,0 +1,28 @@
+<div class="text-center"><h2>Salary Breakup</h2><h4>{{ doc.company or "Sunkonnect" }}</h4></div>
+<p><b>Candidate:</b> {{ doc.applicant_name or doc.job_applicant or "" }}<br><b>Designation:</b> {{ doc.designation or "" }}<br><b>Offer Date:</b> {{ doc.offer_date or "" }}</p>
+<h4>Monthly Earnings</h4><table class="table table-bordered"><tbody>
+<tr><td>Basic Pay</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_basic_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><td>House Rent Allowance</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_hra_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><td>Special Allowance</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_special_allowance_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><th>Gross Monthly Earnings</th><th class="text-right">{{ frappe.utils.fmt_money(doc.custom_gross_monthly, currency=doc.currency or "INR") }}</th></tr>
+</tbody></table>
+<h4>Employee Deductions</h4><table class="table table-bordered"><tbody>
+<tr><td>Employee PF</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_employee_pf_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><td>Employee ESI</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_employee_esi_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><td>Employee LWF</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_employee_lwf_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><th>Net Take-home Before TDS</th><th class="text-right">{{ frappe.utils.fmt_money(doc.custom_net_monthly, currency=doc.currency or "INR") }}</th></tr>
+</tbody></table>
+<h4>Employer Contributions & Annual CTC</h4><table class="table table-bordered"><tbody>
+<tr><td>Employer PF / EDLI / Admin</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_employer_pf_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><td>Employer ESI</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_employer_esi_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><td>Employer LWF</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_employer_lwf_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><td>Gratuity Accrual</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_gratuity_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><td>Statutory Bonus Costing</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_statutory_bonus_monthly, currency=doc.currency or "INR") }}</td></tr>
+<tr><td>Diwali Bonus (annual, if applicable)</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_diwali_bonus_annual, currency=doc.currency or "INR") }}</td></tr>
+<tr><th>Fixed CTC (Annual)</th><th class="text-right">{{ frappe.utils.fmt_money(doc.custom_fixed_ctc_annual, currency=doc.currency or "INR") }}</th></tr>
+<tr><td>Indicative Variable Benefits (Annual)</td><td class="text-right">{{ frappe.utils.fmt_money(doc.custom_variable_ctc_annual, currency=doc.currency or "INR") }}</td></tr>
+<tr><th>Total Indicative CTC (Annual)</th><th class="text-right">{{ frappe.utils.fmt_money(doc.custom_total_ctc_annual, currency=doc.currency or "INR") }}</th></tr>
+</tbody></table>
+<p><b>Wage Category:</b> {{ doc.custom_wage_category or "" }} &nbsp; <b>Monthly Wage Floor:</b> {{ frappe.utils.fmt_money(doc.custom_wage_floor, currency=doc.currency or "INR") }}</p>
+<p><b>Compliance notes:</b><br>{{ (doc.custom_salary_compliance_status or "").replace("\n", "<br>") }}</p>
+<p><small>Indicative salary breakup for offer discussion. Statutory rates and eligibility are subject to applicable law and company policy. Income tax/TDS is not included in take-home shown above.</small></p>

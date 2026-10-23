@@ -1,0 +1,294 @@
+{
+  "doctype": "DocType",
+  "name": "Salary Offer Calculator",
+  "module": "Sunkonnect HR Offer Salary",
+  "custom": 0,
+  "autoname": "SAL-CALC-.#####",
+  "title_field": "applicant_name",
+  "search_fields": "applicant_name,designation,job_applicant",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "candidate_section",
+      "label": "Candidate & Role",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "job_applicant",
+      "label": "Job Applicant",
+      "fieldtype": "Link",
+      "options": "Job Applicant",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "applicant_name",
+      "label": "Candidate Name",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "designation",
+      "label": "Designation",
+      "fieldtype": "Link",
+      "options": "Designation",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "negotiation_status",
+      "label": "Negotiation Status",
+      "fieldtype": "Select",
+      "options": "Draft\nIn Negotiation\nAccepted\nRejected",
+      "default": "Draft",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "salary_section",
+      "label": "Pre-Offer CTC Calculator",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "target_net_salary",
+      "label": "Agreed Monthly In-hand (before TDS)",
+      "fieldtype": "Currency",
+      "reqd": 1,
+      "description": "This exact monthly take-home target is copied to the Job Offer when negotiation is accepted."
+    },
+    {
+      "fieldname": "calculation_version",
+      "label": "Calculation Version",
+      "fieldtype": "Data",
+      "read_only": 1,
+      "hidden": 1
+    },
+    {
+      "fieldname": "budget_section",
+      "label": "Hiring Budget for Selected Designation",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "budget_min_annual_ctc",
+      "label": "Budget Minimum Annual CTC",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "budget_max_annual_ctc",
+      "label": "Budget Maximum Annual CTC",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "budget_approved_positions",
+      "label": "Approved Positions",
+      "fieldtype": "Int",
+      "read_only": 1
+    },
+    {
+      "fieldname": "budget_financial_year",
+      "label": "Budget Financial Year",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "budget_note",
+      "label": "Budget Note",
+      "fieldtype": "Small Text",
+      "read_only": 1
+    },
+    {
+      "fieldname": "budget_status",
+      "label": "Hiring Budget Check",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "result_section",
+      "label": "Calculated Salary & CTC (Monthly unless stated)",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "designation_level",
+      "label": "Designation Level",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "wage_category",
+      "label": "Wage Category",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "wage_floor",
+      "label": "Applicable Monthly Wage Floor",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "basic_monthly",
+      "label": "Basic Pay",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "hra_monthly",
+      "label": "HRA",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "special_allowance_monthly",
+      "label": "Special Allowance",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "gross_monthly",
+      "label": "Gross Earnings",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "employee_pf_monthly",
+      "label": "Employee PF",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "employee_esi_monthly",
+      "label": "Employee ESI",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "employee_lwf_monthly",
+      "label": "Employee LWF",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "net_monthly",
+      "label": "Calculated In-hand Before TDS",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "employer_pf_monthly",
+      "label": "Employer PF / EDLI / Admin",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "employer_esi_monthly",
+      "label": "Employer ESI",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "employer_lwf_monthly",
+      "label": "Employer LWF",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "gratuity_monthly",
+      "label": "Gratuity Accrual",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "statutory_bonus_monthly",
+      "label": "Statutory Bonus Costing",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "diwali_bonus_annual",
+      "label": "Diwali Bonus Annual",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "fixed_ctc_annual",
+      "label": "Fixed CTC Annual",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "variable_ctc_annual",
+      "label": "Variable Benefits Annual",
+      "fieldtype": "Currency",
+      "default": 0
+    },
+    {
+      "fieldname": "total_ctc_annual",
+      "label": "Total Indicative CTC Annual",
+      "fieldtype": "Currency",
+      "read_only": 1
+    },
+    {
+      "fieldname": "compliance_status",
+      "label": "Salary Compliance Checks",
+      "fieldtype": "Small Text",
+      "read_only": 1
+    },
+    {
+      "fieldname": "offer_section",
+      "label": "Job Offer Conversion",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "job_offer",
+      "label": "Created Job Offer",
+      "fieldtype": "Link",
+      "options": "Job Offer",
+      "read_only": 1
+    },
+    {
+      "fieldname": "conversion_note",
+      "label": "Conversion Note",
+      "fieldtype": "Small Text",
+      "read_only": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 0,
+      "cancel": 0,
+      "export": 1,
+      "print": 1
+    },
+    {
+      "role": "HR Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "export": 1,
+      "print": 1
+    },
+    {
+      "role": "HR User",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "export": 1,
+      "print": 1
+    }
+  ]
+}

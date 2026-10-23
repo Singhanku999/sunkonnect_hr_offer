@@ -1,0 +1,40 @@
+{
+  "doctype": "DocType",
+  "name": "Salary Offer Designation Mapping",
+  "module": "Sunkonnect HR Offer Salary",
+  "istable": 1,
+  "custom": 0,
+  "fields": [
+    {
+      "fieldname": "level",
+      "label": "Level",
+      "fieldtype": "Data",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "designation",
+      "label": "Designation",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "wage_category",
+      "label": "Wage Category",
+      "fieldtype": "Select",
+      "options": "Unskilled\\nSemi-skilled\\nSkilled\\nHighly skilled\\nCustom",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "trainee",
+      "label": "Trainee Rate Applies",
+      "fieldtype": "Check"
+    },
+    {
+      "fieldname": "basis",
+      "label": "Basis / Nature of Work",
+      "fieldtype": "Small Text"
+    }
+  ]
+}

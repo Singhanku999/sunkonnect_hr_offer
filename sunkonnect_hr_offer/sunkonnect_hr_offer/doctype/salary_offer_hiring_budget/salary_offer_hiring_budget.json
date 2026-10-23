@@ -1,0 +1,48 @@
+{
+  "doctype": "DocType",
+  "name": "Salary Offer Hiring Budget",
+  "module": "Sunkonnect HR Offer Salary",
+  "istable": 1,
+  "custom": 0,
+  "fields": [
+    {
+      "fieldname": "designation",
+      "label": "Designation",
+      "fieldtype": "Link",
+      "options": "Designation",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "min_annual_ctc",
+      "label": "Minimum Annual CTC",
+      "fieldtype": "Currency",
+      "default": 0,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "max_annual_ctc",
+      "label": "Maximum Annual CTC",
+      "fieldtype": "Currency",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "approved_positions",
+      "label": "Approved Positions",
+      "fieldtype": "Int",
+      "default": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "financial_year",
+      "label": "Financial Year",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "budget_note",
+      "label": "Budget Note / Approval Reference",
+      "fieldtype": "Small Text"
+    }
+  ]
+}

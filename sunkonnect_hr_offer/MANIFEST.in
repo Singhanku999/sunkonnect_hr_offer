@@ -1,0 +1,1 @@
+recursive-include sunkonnect_hr_offer *.json *.js *.html *.txt

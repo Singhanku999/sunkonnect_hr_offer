@@ -1,0 +1,204 @@
+{
+  "doctype": "DocType",
+  "name": "Salary Offer Policy",
+  "module": "Sunkonnect HR Offer Salary",
+  "issingle": 1,
+  "custom": 0,
+  "fields": [
+    {
+      "fieldname": "structure_section",
+      "label": "Salary Structure Ratios",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "basic_pct",
+      "label": "Basic as % of Gross",
+      "fieldtype": "Percent",
+      "default": 60
+    },
+    {
+      "fieldname": "hra_pct_of_basic",
+      "label": "HRA as % of Basic",
+      "fieldtype": "Percent",
+      "default": 40
+    },
+    {
+      "fieldname": "pf_section",
+      "label": "Provident Fund",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "pf_ceiling",
+      "label": "PF Ceiling",
+      "fieldtype": "Currency",
+      "default": 25000
+    },
+    {
+      "fieldname": "restrict_pf_to_ceiling",
+      "label": "Restrict PF to Ceiling",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "employee_pf_pct",
+      "label": "Employee PF %",
+      "fieldtype": "Percent",
+      "default": 12
+    },
+    {
+      "fieldname": "employer_pf_pct",
+      "label": "Employer PF %",
+      "fieldtype": "Percent",
+      "default": 12
+    },
+    {
+      "fieldname": "edli_pct",
+      "label": "EDLI %",
+      "fieldtype": "Percent",
+      "default": 0.5
+    },
+    {
+      "fieldname": "pf_admin_pct",
+      "label": "PF Admin %",
+      "fieldtype": "Percent",
+      "default": 0.5
+    },
+    {
+      "fieldname": "esi_section",
+      "label": "ESI",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "esi_threshold",
+      "label": "ESI Gross Threshold",
+      "fieldtype": "Currency",
+      "default": 21000
+    },
+    {
+      "fieldname": "employee_esi_pct",
+      "label": "Employee ESI %",
+      "fieldtype": "Percent",
+      "default": 0.75
+    },
+    {
+      "fieldname": "employer_esi_pct",
+      "label": "Employer ESI %",
+      "fieldtype": "Percent",
+      "default": 3.25
+    },
+    {
+      "fieldname": "bonus_section",
+      "label": "Bonus and Gratuity",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "bonus_ceiling",
+      "label": "Bonus Eligibility Ceiling",
+      "fieldtype": "Currency",
+      "default": 21000
+    },
+    {
+      "fieldname": "bonus_floor",
+      "label": "Bonus Floor",
+      "fieldtype": "Currency",
+      "default": 7000
+    },
+    {
+      "fieldname": "bonus_min_pct",
+      "label": "Minimum Bonus %",
+      "fieldtype": "Percent",
+      "default": 8.33
+    },
+    {
+      "fieldname": "diwali_bonus_annual",
+      "label": "Diwali Bonus Annual",
+      "fieldtype": "Currency",
+      "default": 5100
+    },
+    {
+      "fieldname": "diwali_treatment",
+      "label": "Diwali Bonus Treatment for Wage Test",
+      "fieldtype": "Select",
+      "options": "Statutory\\nWages",
+      "default": "Statutory"
+    },
+    {
+      "fieldname": "gratuity_pct",
+      "label": "Gratuity Accrual % of Basic",
+      "fieldtype": "Percent",
+      "default": 4.81
+    },
+    {
+      "fieldname": "lwf_section",
+      "label": "Haryana LWF",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "employee_lwf_monthly",
+      "label": "Employee LWF Monthly",
+      "fieldtype": "Currency",
+      "default": 35
+    },
+    {
+      "fieldname": "employer_lwf_monthly",
+      "label": "Employer LWF Monthly",
+      "fieldtype": "Currency",
+      "default": 70
+    },
+    {
+      "fieldname": "max_exclusions_pct",
+      "label": "Max Exclusions % for Wage Test",
+      "fieldtype": "Percent",
+      "default": 50
+    },
+    {
+      "fieldname": "mapping_section",
+      "label": "Designation Mapping",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "designation_mappings",
+      "label": "Designation Mappings",
+      "fieldtype": "Table",
+      "options": "Salary Offer Designation Mapping"
+    },
+    {
+      "fieldname": "wage_section",
+      "label": "Minimum Wage Rates",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "wage_rates",
+      "label": "Wage Rates",
+      "fieldtype": "Table",
+      "options": "Salary Offer Wage Rate"
+    },
+    {
+      "fieldname": "budget_section",
+      "label": "Designation-wise Hiring Budget Slabs",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "hiring_budgets",
+      "label": "Hiring Budget Slabs",
+      "fieldtype": "Table",
+      "options": "Salary Offer Hiring Budget"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "HR Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0
+    }
+  ]
+}

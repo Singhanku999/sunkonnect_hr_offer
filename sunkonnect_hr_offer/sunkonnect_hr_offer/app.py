@@ -1,0 +1,6 @@
+app_name = "sunkonnect_hr_offer"
+app_title = "Sunkonnect HR Offer Salary"
+app_publisher = "Sunkonnect"
+app_description = "Candidate-facing salary offer breakup for ERPNext"
+app_email = "erp.support@sunkonnect.co"
+app_license = "MIT"

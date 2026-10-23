@@ -1,0 +1,179 @@
+{
+  "designation_mappings": [
+    {
+      "level": "L1",
+      "designation": "CXO",
+      "wage_category": "Highly skilled",
+      "basis": "Directs the Company; ultimate decision-making authority"
+    },
+    {
+      "level": "L2",
+      "designation": "Sr. VP",
+      "wage_category": "Highly skilled",
+      "basis": "Directs a business function; supervises senior managers"
+    },
+    {
+      "level": "L2",
+      "designation": "VP",
+      "wage_category": "Highly skilled",
+      "basis": "Directs a business function; supervises senior managers"
+    },
+    {
+      "level": "L2",
+      "designation": "AVP",
+      "wage_category": "Highly skilled",
+      "basis": "Leads a division or function; supervises managers"
+    },
+    {
+      "level": "L3",
+      "designation": "General Manager",
+      "wage_category": "Highly skilled",
+      "basis": "Manages a department; supervises skilled staff"
+    },
+    {
+      "level": "L3",
+      "designation": "Sr. Manager",
+      "wage_category": "Highly skilled",
+      "basis": "Manages a department; supervises skilled staff"
+    },
+    {
+      "level": "L3",
+      "designation": "Manager",
+      "wage_category": "Highly skilled",
+      "basis": "Manages a team of skilled staff with decision-making authority"
+    },
+    {
+      "level": "L3",
+      "designation": "Asst. Manager",
+      "wage_category": "Highly skilled",
+      "basis": "Supervises skilled staff and reviews their work"
+    },
+    {
+      "level": "L4",
+      "designation": "Sr. Consultant / Sr. Executive / Sr. Engineer",
+      "wage_category": "Highly skilled",
+      "basis": "Specialist judgement; reviews and signs off others' work"
+    },
+    {
+      "level": "L4",
+      "designation": "Consultant / Executive / Engineer",
+      "wage_category": "Skilled",
+      "basis": "Delivers work independently on trained competence"
+    },
+    {
+      "level": "L4",
+      "designation": "Consultant / Executive / Engineer – site lead / sign-off",
+      "wage_category": "Highly skilled",
+      "basis": "Leads a site team or signs off deliverables, as stated in the appointment letter"
+    },
+    {
+      "level": "L5",
+      "designation": "Sr. Analyst",
+      "wage_category": "Skilled",
+      "basis": "Independent delivery of assigned work packages"
+    },
+    {
+      "level": "L5",
+      "designation": "Analyst – engineering / PV Tech / BoS / PMC",
+      "wage_category": "Skilled",
+      "basis": "Technical output on trained competence; reviewed, not supervised step by step"
+    },
+    {
+      "level": "L5",
+      "designation": "Analyst – administration / data entry / telecalling / coordination",
+      "wage_category": "Semi-skilled",
+      "basis": "Routine procedures under supervision"
+    },
+    {
+      "level": "L6",
+      "designation": "Intern – engineering (any qualification)",
+      "wage_category": "Skilled",
+      "basis": "Trains for an engineering Analyst role; trainee rate = 75% of category wage, never below Unskilled; ≤ 6 months"
+    },
+    {
+      "level": "L6",
+      "designation": "Intern – non-engineering (any qualification)",
+      "wage_category": "Semi-skilled",
+      "basis": "Trains for an administration / coordination role; trainee rate = 75% of category wage, never below Unskilled; ≤ 6 months"
+    },
+    {
+      "level": "—",
+      "designation": "Site Supervisor",
+      "wage_category": "Highly skilled",
+      "basis": "Supervises skilled site staff"
+    },
+    {
+      "level": "—",
+      "designation": "Site Technician / Electrician",
+      "wage_category": "Skilled",
+      "basis": "Trade work requiring training and certification"
+    },
+    {
+      "level": "—",
+      "designation": "Driver (light vehicle)",
+      "wage_category": "Skilled",
+      "basis": "Licensed trade, as classified by Haryana"
+    },
+    {
+      "level": "—",
+      "designation": "Accountant / HR Executive",
+      "wage_category": "Skilled",
+      "basis": "Trained competence; processes independently"
+    },
+    {
+      "level": "—",
+      "designation": "Receptionist / Office Coordinator",
+      "wage_category": "Semi-skilled",
+      "basis": "Routine procedures under supervision"
+    },
+    {
+      "level": "—",
+      "designation": "Site Helper / Office Boy / Housekeeping",
+      "wage_category": "Unskilled",
+      "basis": "Simple operations requiring no prior training, irrespective of tenure"
+    }
+  ],
+  "wage_rates_fy_2026_27": {
+    "Unskilled": 15220.71,
+    "Semi-skilled": 16780.74,
+    "Skilled": 18500.81,
+    "Highly skilled": 19425.85
+  },
+  "policy_inputs": {
+    "Basic as % of Gross (default)": 0.6,
+    "HRA as % of Basic (default)": 0.4,
+    "PROVIDENT FUND (Code on Social Security 2020 / EPF Scheme)": null,
+    "PF wage ceiling (₹/month)": 25000,
+    "Restrict PF to ceiling? (Yes/No)": "Yes",
+    "Employee PF %": 0.12,
+    "Employer PF % (total)": 0.12,
+    "EPS share % (out of employer PF, capped at ceiling)": 0.0833,
+    "EDLI % (employer, capped at ceiling)": 0.005,
+    "PF admin charge % (employer)": 0.005,
+    "ESI": null,
+    "ESI gross threshold (₹/month)": 21000,
+    "ESI employee %": 0.0075,
+    "ESI employer %": 0.0325,
+    "STATUTORY BONUS (Code on Wages 2019, Ch. IV, s.26)": null,
+    "Bonus eligibility ceiling – wages ≤ (₹/month)": 21000,
+    "Bonus calculation floor (₹/month)": 7000,
+    "Bonus % (min 8.33%, max 20%)": 0.0833,
+    "DIWALI BONUS": null,
+    "Diwali bonus (annual ₹, paid at Diwali)": 5100,
+    "2(y) treatment of Diwali amount for bonus-ELIGIBLE staff (Statutory/Wages)": "Statutory",
+    "PAYROLL ATTENDANCE": null,
+    "Loss-of-pay divisor (days)": 30,
+    "Payroll period start day of month": 26,
+    "SITE ALLOWANCES (Annexure P / S – outside CTC, outside PF/ESI/bonus/gratuity)": null,
+    "Food allowance – per site attendance day (₹)": 400,
+    "Lodging & conveyance allowance – per posting day (₹)": 450,
+    "Lodging allowance – paid-leave days allowed per period before suspension": 999,
+    "LABOUR WELFARE FUND – HARYANA": null,
+    "LWF employee (₹/month)": 35,
+    "LWF employer (₹/month)": 70,
+    "GRATUITY": null,
+    "Gratuity accrual % of Basic": 0.0481,
+    "CODE ON WAGES s.2(y) TEST": null,
+    "Max excluded components as % of total remuneration": 0.5
+  }
+}
